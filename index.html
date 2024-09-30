@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei Han Web</title>
+    <link rel="stylesheet" href="PW.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <style>
+        img{
+            width:1000px;
+        }
+    </style>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    
+                    <div class="logo-text">Lei Han</div>
+                </div>
+                
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/20231201_113023.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <nav>
+                        <div class="togglebtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    <div class="logo-text"><p font color="00FF00"><h1>Code Project</h1></p></div>
+                        <ul class="navlinks">
+                            <li><a href="https://github.com/Musichanlei/Family_Tree_.git">C++(Family Tree)</a></li>
+                            <li><a href="https://github.com/Musichanlei/DMV_CPP_OOP.git">C++(DMV)</a></li>
+                            <li><a href="https://github.com/Musichanlei/GUI_Project_3_Java.git">JAVA(GUI3)</a></li>
+                            <li><a href="https://github.com/Musichanlei/GUI_Project_4_Java.git">JAVA(GUI4)</a></li>
+                            <li><a href="https://colab.research.google.com/drive/1x974bk-wAGCLw4wOBKSuT8cRidrA-c3e?usp=sharing">Python(Machine Learning)</a></li>
+                        </ul>
+                    </nav>
+                    <h5>Hi I'm <span class="input">A Computer Science Student</span></h5>
+                    <h1>Lei Han</h1>
+                    <p> "Welcome! I'm Lei Han, and this is where I share my passion for technology and life.
+
+                         I'm currently a Computer Science and Quantitative Economics student, and my biggest 
+                         
+                         passion right now is technology. I’m a strong believer that technology will change 
+                         
+                         the world, and I hope to play my own small part in that transformation.
+
+                         When I'm not immersed in tech, you can find me either playing music or working out—both 
+                         
+                         of which add a lot of color and energy to my life."
+                    </p>
+
+                  
+
+                      
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["A Computer Science Student","A Part-Time Soldier","A Musician"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
+
